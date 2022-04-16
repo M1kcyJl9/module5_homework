@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Module 5. Javascript education</title>
+</head>
+<body>
+    <script type ="text/javascript">
+/*
+Дан массив. 
+Проверить, одинаковые ли элементы в массиве и вывести результат true или false в консоль. 
+Речь идёт не о двух рядом стоящих одинаковых элементах, а обо всех. 
+Проверить, все ли элементы в массиве одинаковые.
+*/
+
+
+let arr = ['Sasha', 'Masha', 'Sasha', 'Dasha', 'Masha']
+arr.forEach(function(item, index, array) {
+for (let i = index + 1; i < arr.length; i++){
+    if (item === arr[i]){
+        document.writeln (`На данной итерации найден дубль ${item} и ${arr[i]} <br>`)
+    } else{
+        document.writeln (`На данной итерации нет дублей <br>`)
+    }}})
+    </script>
+    <h1>Задание 6!</h1>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Module 5. Javascript education</title>
+</head>
+<body>
+    <script type ="text/javascript">
+/*
+Задача 2!
+Дана переменная Х, которая может принимать любое значение. 
+Написать программу, которая в зависимости от типа данных Х выводит в консоль сообщение вида: 
+«X — число».
+Опишите три случая: когда х = числу, строке или логическому типу. 
+В других случаях выводите сообщение: «Тип x не определён».
+*/
+let x = undefined
+document.writeln (`В коде x =  ${x}, a его тип: ${typeof(x)} <br>`)
+switch (typeof(x)){
+        case "number":
+        document.writeln (`Это число`);
+        break;
+        case "string":
+        document.writeln (`Это строка`);
+        break;
+        case "boolean":
+        document.writeln (`Это логический тип`);
+        break;
+        default:
+        document.writeln (`Это не понятно что`);
+}
+    </script>
+    <h1>Задание 2!</h1>
+</body>
+</html>

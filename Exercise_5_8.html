@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Module 5. Javascript education</title>
+</head>
+<body>
+    <script type ="text/javascript">
+/*
+Создайте произвольный массив Map. 
+Получите его ключи и выведите в консоль все значения в виде «Ключ — Х, значение — Y».
+Используйте шаблонные строки.
+*/
+
+let arrMap = new Map()
+
+arrMap.set (1, 'Первый')
+arrMap.set ('two', 'Второй')
+arrMap.set (true, 'Третий')
+console.log(arrMap.get(1))
+console.log(arrMap.get('two'))
+console.log(arrMap.get(true))
+console.log(arrMap.keys())
+console.log(arrMap.values())
+console.log(arrMap.size)
+
+for (let keys of arrMap.keys()){
+    console.log (`Ключ - ${keys}`)
+}
+for (values of arrMap.values()){
+    console.log (`Значение - ${values}`)
+}
+    </script>
+    <h1>Задание 8!</h1>
+</body>
+</html>
